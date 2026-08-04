@@ -48,8 +48,8 @@ const lifeNotes = [
   {
     number: "02",
     title: "Books & ideas",
-    text: "My reading wanders beyond economics into history, literature, and the social lives hidden behind data and institutions.",
-    tag: "Reading · Curiosity",
+    text: "I love science fiction, modern Chinese literature, and psychology—books that open new worlds and illuminate the hidden landscapes within us.",
+    tag: "Reading · Inner worlds",
   },
   {
     number: "03",
@@ -149,6 +149,27 @@ export default function Home() {
               <p>{item.text}</p>
             </article>
           ))}
+        </div>
+        <div className="reading-feature">
+          <div className="reading-statement">
+            <p className="life-tag">On my bookshelf</p>
+            <h3>I read to explore<br />the human interior.</h3>
+            <p>Whether a story travels into the future, looks back at a changing China, or examines the architecture of the mind, I am drawn to books that ask what it means to be human.</p>
+          </div>
+          <div className="reading-shelves" aria-label="Favorite reading genres">
+            <article>
+              <span>01</span>
+              <div><h4>Science fiction</h4><p>Possible futures, unfamiliar worlds, and new ways of seeing the present.</p></div>
+            </article>
+            <article>
+              <span>02</span>
+              <div><h4>Modern Chinese literature</h4><p>Individual lives set against social change, history, and memory.</p></div>
+            </article>
+            <article>
+              <span>03</span>
+              <div><h4>Psychology</h4><p>Emotion, motivation, relationships, and the many layers of the inner self.</p></div>
+            </article>
+          </div>
         </div>
         <p className="life-note">A small, evolving collection of the things that keep me interested in the world.</p>
       </section>

@@ -81,6 +81,15 @@ h2 { font: 400 clamp(3rem,6vw,6.2rem)/.95 Georgia, serif; letter-spacing: -.055e
 .life-tag { margin: 0 0 .7rem; }
 .life-grid h3 { margin: 0 0 .8rem; font: 400 2rem/1.05 Georgia, serif; letter-spacing: -.03em; }
 .life-grid article > p:last-child { margin: 0; color: var(--muted); font-size: .86rem; line-height: 1.7; }
+.reading-feature { margin-top: 5rem; padding: 4rem; background: var(--ink); color: white; display: grid; grid-template-columns: minmax(0, .85fr) minmax(420px, 1.15fr); gap: 7vw; align-items: start; }
+.reading-statement h3 { margin: 1.2rem 0 1.5rem; font: 400 clamp(2.4rem, 4vw, 4.7rem)/.98 Georgia, serif; letter-spacing: -.045em; }
+.reading-statement > p:last-child { max-width: 540px; color: #bac2d1; font: 400 1rem/1.75 Georgia, serif; }
+.reading-feature .life-tag { color: #8fb0de; }
+.reading-shelves { border-top: 1px solid rgba(255,255,255,.24); }
+.reading-shelves article { padding: 1.5rem 0; border-bottom: 1px solid rgba(255,255,255,.24); display: grid; grid-template-columns: 54px 1fr; gap: 1rem; }
+.reading-shelves article > span { color: #8fb0de; font: .62rem var(--font-mono), monospace; padding-top: .25rem; }
+.reading-shelves h4 { margin: 0 0 .5rem; font: 400 1.45rem/1.1 Georgia, serif; }
+.reading-shelves p { margin: 0; color: #aeb7c8; font-size: .78rem; line-height: 1.6; }
 .life-note { margin: 2rem 0 0 auto; max-width: 430px; text-align: right; font: italic 1rem/1.6 Georgia, serif; color: var(--muted); }
 .contact { padding: 8rem 8vw 5rem; background: var(--blue); color: white; }
 .contact > p { color: #b9cce6; }
@@ -101,6 +110,7 @@ footer { background: var(--ink); color: #aeb7ca; padding: 1.4rem 6vw; display: f
   .section-title, .teaching { grid-template-columns: 1fr; gap: 3rem; }
   .life-grid { grid-template-columns: 1fr; }
   .life-grid article { min-height: 360px; }
+  .reading-feature { grid-template-columns: 1fr; padding: 3rem; }
   .papers { margin-left: 0; }
   .contact { padding: 6rem 6vw 4rem; }
   .contact-grid { grid-template-columns: 1fr; gap: 1.5rem; margin-top: 5rem; }
@@ -110,6 +120,7 @@ footer { background: var(--ink); color: #aeb7ca; padding: 1.4rem 6vw; display: f
   .fields { justify-content: flex-start; }
   .papers article { grid-template-columns: 1fr; gap: .8rem; }
   .paper-index { display: none; }
+  .reading-feature { padding: 2rem; margin-top: 3rem; }
   footer { flex-direction: column; gap: .5rem; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
