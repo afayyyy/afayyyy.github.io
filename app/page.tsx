@@ -51,12 +51,19 @@ const lifeNotes = [
     text: "I love science fiction, modern Chinese literature, and psychology—books that open new worlds and illuminate the hidden landscapes within us.",
     tag: "Reading · Inner worlds",
   },
-  {
-    number: "03",
-    title: "Food as a map",
-    text: "A good meal is one of my favorite ways to understand a place—its migrations, trade routes, memories, and everyday rhythms.",
-    tag: "Tasting · Sharing",
-  },
+];
+
+const cityWalks = [
+  { image: "/city-walks/01-shenzhen-urban-village.jpg", place: "Shenzhen", title: "Inside the urban village", note: "Dense, improvised, and alive: an everyday architecture shaped by migration and work." },
+  { image: "/city-walks/02-hong-kong-mother-child.jpg", place: "Hong Kong", title: "Mother and child", note: "A quiet sculpture in an art museum—intimacy held in bronze and light." },
+  { image: "/city-walks/03-sentosa-couple.jpg", place: "Singapore · Sentosa", title: "Two by the water", note: "A couple at the edge of a carefully made tropical landscape." },
+  { image: "/city-walks/04-zurich-fries.jpg", place: "Zürich", title: "Let’s get fries at the pier", note: "The city, the river, and a local who arrived before us." },
+  { image: "/city-walks/05-victoria-park-gorilla.jpg", place: "Hong Kong · Victoria Park", title: "A gorilla woven from flowers", note: "Public spectacle where horticulture, craft, and urban play meet." },
+  { image: "/city-walks/06-kaohsiung-city-nature.jpg", place: "Kaohsiung", title: "Where the city meets nature", note: "Grass settles between the rails while the skyline keeps rising." },
+  { image: "/city-walks/07-kaohsiung-family.jpg", place: "Kaohsiung", title: "A family looking at the sea", note: "Three figures facing the horizon: a small scene of care beside a vast landscape." },
+  { image: "/city-walks/08-hong-kong-street.jpg", place: "Hong Kong", title: "Street rhythm", note: "Signs, crossings, headlights, and old façades compressed into one restless frame." },
+  { image: "/city-walks/09-hong-kong-fishing-village.jpg", place: "Hong Kong · Fishing village", title: "Stones without an answer", note: "Graffiti, fish, and carefully stacked stones. I still do not know what the stones mean." },
+  { image: "/city-walks/10-beijing-zhongguancun.jpg", place: "Beijing · Zhongguancun", title: "The productivity of light", note: "I heard every company keeps its lights on at night, as if illumination itself could signal productivity." },
 ];
 
 export default function Home() {
@@ -136,7 +143,7 @@ export default function Home() {
           <p>04 · Personal life</p>
           <div>
             <h2>Life beyond<br />research</h2>
-            <p className="life-intro">Research is only one way I stay curious. Away from papers and datasets, I like finding stories in places, books, and shared meals.</p>
+            <p className="life-intro">Research is only one way I stay curious. Away from papers and datasets, I find stories in books and in the cultural traces of the cities I walk through.</p>
           </div>
         </div>
         <div className="life-grid">
@@ -149,6 +156,25 @@ export default function Home() {
               <p>{item.text}</p>
             </article>
           ))}
+        </div>
+        <div className="walks-feature">
+          <div className="walks-heading">
+            <p className="life-tag">City walks · A visual notebook</p>
+            <h3>Culture lives in<br />ordinary scenes.</h3>
+            <p>I photograph cities as places where memory, labor, art, nature, and everyday relationships leave visible traces.</p>
+          </div>
+          <div className="walks-grid">
+            {cityWalks.map((walk, index) => (
+              <figure key={walk.image} className={`walk-${index + 1}`}>
+                <img src={walk.image} alt={`${walk.title}, photographed in ${walk.place}`} loading="lazy" />
+                <figcaption>
+                  <span>{walk.place}</span>
+                  <h4>{walk.title}</h4>
+                  <p>{walk.note}</p>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
         </div>
         <div className="reading-feature">
           <div className="reading-statement">
