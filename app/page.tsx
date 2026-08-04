@@ -186,6 +186,7 @@ export default function Home() {
                 <figcaption>
                   <span>{walk.place}</span>
                   <h4>{walk.title}</h4>
+                  <p>{walk.note}</p>
                 </figcaption>
               </figure>
             ))}
