@@ -64,6 +64,15 @@ const cityWalks = [
   { image: "/city-walks/08-hong-kong-street.jpg", place: "Hong Kong", title: "Street rhythm", note: "Signs, crossings, headlights, and old façades compressed into one restless frame." },
   { image: "/city-walks/09-hong-kong-fishing-village.jpg", place: "Hong Kong · Fishing village", title: "Stones without an answer", note: "Graffiti, fish, and carefully stacked stones. I still do not know what the stones mean." },
   { image: "/city-walks/10-beijing-zhongguancun.jpg", place: "Beijing · Zhongguancun", title: "The productivity of light", note: "I heard every company keeps its lights on at night, as if illumination itself could signal productivity." },
+  { image: "/city-walks/11-hebei-winter-town.jpg", place: "Northern Hebei", title: "A winter town", note: "Reeds, frozen water, bare trees, and distant homes beneath an impossibly clear northern sky." },
+  { image: "/city-walks/12-shanghai-sanitation-reader.jpg", place: "Shanghai", title: "Reading between shifts", note: "A sanitation worker pauses under the streetlight with a book—the private life of the mind within public labor." },
+  { image: "/city-walks/13-pattaya-reader.jpg", place: "Pattaya", title: "Reading by borrowed light", note: "Beside a beach in the red-light district, an elderly waste picker reads beneath a streetlamp." },
+  { image: "/city-walks/14-hong-kong-fire-dragon.jpg", place: "Hong Kong · Tai Hang", title: "The fire dragon travels", note: "A local folk ritual carried through narrow streets, now joined and witnessed by people from many cultures." },
+  { image: "/city-walks/15-zhengzhou-square.jpg", place: "Zhengzhou", title: "A slogan above the clocks", note: "Traditional roofs, twin clocks, a red star, and the words ‘Long live Mao Zedong Thought’ layered into the city square." },
+  { image: "/city-walks/16-longmen-grottoes.jpg", place: "Luoyang · Longmen Grottoes", title: "Before the great Buddha", note: "A monumental sacred figure in stone; below, dense streams of visitors make the scale suddenly human." },
+  { image: "/city-walks/17-hebei-fortune-telling.jpg", place: "Hebei", title: "Fate as a street business", note: "Palm reading, names, dates, and fortune-telling offered from a small blue cart at the edge of the market." },
+  { image: "/city-walks/18-west-lake-sunset.jpg", place: "Hangzhou · West Lake", title: "Autumn water and the endless sky", note: "At sunset, water and sky become one color—an old poetic image returning in an ordinary evening." },
+  { image: "/city-walks/19-shenzhen-lianhuashan.jpg", place: "Shenzhen · Lianhuashan Park", title: "A city written into history", note: "Deng Xiaoping’s inscription links Shenzhen’s urban landscape to the story it tells about reform and development." },
 ];
 
 export default function Home() {
