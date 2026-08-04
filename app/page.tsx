@@ -64,7 +64,9 @@ export default function Home() {
           </div>
         </div>
         <aside className="profile">
-          <div className="portrait"><span>JH</span><small>Jing Han · Economist</small></div>
+          <div className="portrait portrait-photo">
+            <img src="/jing-han-portrait.jpg" alt="Portrait of Jing Han" width="1080" height="1440" />
+          </div>
           <dl>
             <div><dt>Fields</dt><dd>Digital Economics · International Trade</dd></div>
             <div><dt>Affiliation</dt><dd>The Chinese University of Hong Kong</dd></div>
