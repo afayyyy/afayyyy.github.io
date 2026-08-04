@@ -67,6 +67,21 @@ h2 { font: 400 clamp(3rem,6vw,6.2rem)/.95 Georgia, serif; letter-spacing: -.055e
 .course-list span { font: .65rem var(--font-mono); color: var(--blue); }
 .course-list h3 { margin: 0 0 .4rem; font: 400 1.4rem Georgia, serif; }
 .course-list p { margin: 0; font-size: .75rem; color: var(--muted); }
+.life { background: #f3eee6; overflow: hidden; }
+.life-heading { align-items: start; }
+.life-heading > div { max-width: 900px; }
+.life-intro { max-width: 620px; margin: 2rem 0 0; font: 400 1.05rem/1.75 Georgia, serif; color: #596070; }
+.life-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 2rem; background: #d4cec4; border: 1px solid #d4cec4; }
+.life-grid article { position: relative; min-height: 430px; padding: 2rem; background: var(--paper); display: flex; flex-direction: column; align-items: flex-start; overflow: hidden; transition: background .25s, transform .25s; }
+.life-grid article:hover { background: #fff; transform: translateY(-4px); z-index: 1; }
+.life-number, .life-tag { font: 600 .62rem/1.3 var(--font-mono), monospace; letter-spacing: .1em; text-transform: uppercase; color: var(--blue); }
+.life-mark { width: 120px; height: 120px; margin: 2.8rem 0 3.4rem; border-radius: 50%; display: grid; place-items: center; background: var(--ink); color: #f3eee6; font: italic 4.6rem/1 Georgia, serif; box-shadow: 18px 18px 0 #dbe4ef; transform: rotate(-6deg); }
+.life-grid article:nth-child(2) .life-mark { border-radius: 12px; background: var(--blue); transform: rotate(5deg); box-shadow: -16px 16px 0 #e4d4c4; }
+.life-grid article:nth-child(3) .life-mark { border-radius: 50% 50% 8px 50%; background: #9a543d; transform: rotate(12deg); box-shadow: 16px -12px 0 #d9dfd1; }
+.life-tag { margin: 0 0 .7rem; }
+.life-grid h3 { margin: 0 0 .8rem; font: 400 2rem/1.05 Georgia, serif; letter-spacing: -.03em; }
+.life-grid article > p:last-child { margin: 0; color: var(--muted); font-size: .86rem; line-height: 1.7; }
+.life-note { margin: 2rem 0 0 auto; max-width: 430px; text-align: right; font: italic 1rem/1.6 Georgia, serif; color: var(--muted); }
 .contact { padding: 8rem 8vw 5rem; background: var(--blue); color: white; }
 .contact > p { color: #b9cce6; }
 .contact h2 { margin: 1.2rem 0 3rem; }
@@ -84,6 +99,8 @@ footer { background: var(--ink); color: #aeb7ca; padding: 1.4rem 6vw; display: f
   .profile { max-width: 420px; }
   .section { padding: 6rem 6vw; }
   .section-title, .teaching { grid-template-columns: 1fr; gap: 3rem; }
+  .life-grid { grid-template-columns: 1fr; }
+  .life-grid article { min-height: 360px; }
   .papers { margin-left: 0; }
   .contact { padding: 6rem 6vw 4rem; }
   .contact-grid { grid-template-columns: 1fr; gap: 1.5rem; margin-top: 5rem; }

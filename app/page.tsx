@@ -38,13 +38,34 @@ const experience = [
   { years: "2018–19", place: "Bain & Company, Shanghai", role: "Business Analyst Intern" },
 ];
 
+const lifeNotes = [
+  {
+    number: "01",
+    title: "City walks",
+    text: "I enjoy discovering a city on foot—quiet streets, neighborhood markets, and the small details that make a place feel lived in.",
+    tag: "Wandering · Observing",
+  },
+  {
+    number: "02",
+    title: "Books & ideas",
+    text: "My reading wanders beyond economics into history, literature, and the social lives hidden behind data and institutions.",
+    tag: "Reading · Curiosity",
+  },
+  {
+    number: "03",
+    title: "Food as a map",
+    text: "A good meal is one of my favorite ways to understand a place—its migrations, trade routes, memories, and everyday rhythms.",
+    tag: "Tasting · Sharing",
+  },
+];
+
 export default function Home() {
   return (
     <main id="top">
       <header>
         <a className="brand" href="#top">JING HAN <span>ECONOMICS</span></a>
         <nav aria-label="Main navigation">
-          <a href="#about">Home</a><a href="#research">Research</a><a href="#background">Background</a><a href="#contact">Contact</a>
+          <a href="#about">Home</a><a href="#research">Research</a><a href="#background">Background</a><a href="#life">Personal life</a><a href="#contact">Contact</a>
         </nav>
         <a className="cv" href="/Jing_Han_CV.pdf" target="_blank">CV ↗</a>
       </header>
@@ -110,8 +131,30 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section life" id="life">
+        <div className="section-title life-heading">
+          <p>04 · Personal life</p>
+          <div>
+            <h2>Life beyond<br />research</h2>
+            <p className="life-intro">Research is only one way I stay curious. Away from papers and datasets, I like finding stories in places, books, and shared meals.</p>
+          </div>
+        </div>
+        <div className="life-grid">
+          {lifeNotes.map((item) => (
+            <article key={item.title}>
+              <span className="life-number">{item.number}</span>
+              <div className="life-mark" aria-hidden="true">{item.title.charAt(0)}</div>
+              <p className="life-tag">{item.tag}</p>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
+          ))}
+        </div>
+        <p className="life-note">A small, evolving collection of the things that keep me interested in the world.</p>
+      </section>
+
       <section className="contact" id="contact">
-        <p>04 · Contact</p><h2>Let&apos;s talk about<br />research.</h2>
+        <p>05 · Contact</p><h2>Let&apos;s talk about<br />research.</h2>
         <a className="email" href="mailto:1155179329@link.cuhk.edu.hk">1155179329@link.cuhk.edu.hk <span>↗</span></a>
         <div className="contact-grid">
           <div><b>Based in</b><span>Hong Kong SAR<br />The Chinese University of Hong Kong</span></div>
