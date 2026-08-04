@@ -78,6 +78,8 @@ const cityWalks = [
   { image: "/city-walks/22-xixi-balloon.jpg", place: "Hangzhou · Xixi", title: "A dreamcore afternoon", note: "A balloon rises above the wetland park, suspended between trees, water, and a sky that feels almost remembered rather than real." },
   { image: "/city-walks/23-fuyang-rapeseed-fields.jpg", place: "Hangzhou · Fuyang", title: "Fields as geometry", note: "Rapeseed flowers, vegetable plots, paths, and a canal turn an agricultural landscape into an accidental abstract composition." },
   { image: "/city-walks/24-summer-palace-father-daughter.jpg", place: "Beijing · Summer Palace", title: "Winter light at the window", note: "A father and daughter warm themselves by the glass, looking out together at the snow-covered lake." },
+  { image: "/city-walks/25-oxford-front-gardens.jpg", place: "Oxford", title: "Gardens at every doorstep", note: "In Oxford, even the walk home passes through a small garden." },
+  { image: "/city-walks/26-florence-supermarket.jpg", place: "Florence", title: "Would you have guessed?", note: "A wall of Chinese snacks—in a supermarket in Florence." },
 ];
 
 export default function Home() {
@@ -184,7 +186,6 @@ export default function Home() {
                 <figcaption>
                   <span>{walk.place}</span>
                   <h4>{walk.title}</h4>
-                  <p>{walk.note}</p>
                 </figcaption>
               </figure>
             ))}
