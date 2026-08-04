@@ -73,6 +73,7 @@ const cityWalks = [
   { image: "/city-walks/17-hebei-fortune-telling.jpg", place: "Hebei", title: "Fate as a street business", note: "Palm reading, names, dates, and fortune-telling offered from a small blue cart at the edge of the market." },
   { image: "/city-walks/18-west-lake-sunset.jpg", place: "Hangzhou · West Lake", title: "Autumn water and the endless sky", note: "At sunset, water and sky become one color—an old poetic image returning in an ordinary evening." },
   { image: "/city-walks/19-shenzhen-lianhuashan.jpg", place: "Shenzhen · Lianhuashan Park", title: "A city written into history", note: "Deng Xiaoping’s inscription links Shenzhen’s urban landscape to the story it tells about reform and development." },
+  { image: "/city-walks/20-beijing-houhai-preservation.jpg", place: "Beijing · Houhai", title: "Buildings that must remain", note: "These buildings cannot be demolished. Their tiled roofs preserve an old urban fabric while the modern skyline rises beyond it." },
 ];
 
 export default function Home() {
