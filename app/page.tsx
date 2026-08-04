@@ -74,6 +74,10 @@ const cityWalks = [
   { image: "/city-walks/18-west-lake-sunset.jpg", place: "Hangzhou · West Lake", title: "Autumn water and the endless sky", note: "At sunset, water and sky become one color—an old poetic image returning in an ordinary evening." },
   { image: "/city-walks/19-shenzhen-lianhuashan.jpg", place: "Shenzhen · Lianhuashan Park", title: "A city written into history", note: "Deng Xiaoping’s inscription links Shenzhen’s urban landscape to the story it tells about reform and development." },
   { image: "/city-walks/20-beijing-houhai-preservation.jpg", place: "Beijing · Houhai", title: "Buildings that must remain", note: "These buildings cannot be demolished. Their tiled roofs preserve an old urban fabric while the modern skyline rises beyond it." },
+  { image: "/city-walks/21-northeast-autumn-fruit.jpg", place: "Northeast China", title: "The colors of autumn", note: "Crimson crabapples and yellow pears fill a street stall—season and local abundance arranged in two bands of color." },
+  { image: "/city-walks/22-xixi-balloon.jpg", place: "Hangzhou · Xixi", title: "A dreamcore afternoon", note: "A balloon rises above the wetland park, suspended between trees, water, and a sky that feels almost remembered rather than real." },
+  { image: "/city-walks/23-fuyang-rapeseed-fields.jpg", place: "Hangzhou · Fuyang", title: "Fields as geometry", note: "Rapeseed flowers, vegetable plots, paths, and a canal turn an agricultural landscape into an accidental abstract composition." },
+  { image: "/city-walks/24-summer-palace-father-daughter.jpg", place: "Beijing · Summer Palace", title: "Winter light at the window", note: "A father and daughter warm themselves by the glass, looking out together at the snow-covered lake." },
 ];
 
 export default function Home() {
