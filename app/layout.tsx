@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  verification: {
+    google: "t6W1KyvwnjkpfRkP2w48JgYW5SYrUpNY0NymRre2e2E",
+  },
   openGraph: {
     title: "Jing Han | Economist",
     description: "Digital Economics · International Trade · Technological Change",
