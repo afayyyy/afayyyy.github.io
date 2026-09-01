@@ -4,22 +4,27 @@ import "./globals.css";
 
 const sans = Geist({ variable: "--font-sans", subsets: ["latin"] });
 const mono = Geist_Mono({ variable: "--font-mono", subsets: ["latin"] });
+const siteUrl = "https://afayyyy.github.io";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Jing Han | Economist",
   description: "Academic homepage of Jing Han, a Ph.D. candidate in Economics at The Chinese University of Hong Kong studying digital platforms, international trade, and technological change.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Jing Han | Economist",
     description: "Digital Economics · International Trade · Technological Change",
     type: "website",
-    url: "https://academic-homepage-2026.faye9703.chatgpt.site",
-    images: [{ url: "https://academic-homepage-2026.faye9703.chatgpt.site/og.png", width: 1200, height: 630, alt: "Jing Han - Economist" }],
+    url: siteUrl,
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Jing Han - Economist" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Jing Han | Economist",
     description: "Digital Economics · International Trade · Technological Change",
-    images: ["https://academic-homepage-2026.faye9703.chatgpt.site/og.png"],
+    images: ["/og.png"],
   },
 };
 
