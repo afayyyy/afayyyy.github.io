@@ -52,10 +52,13 @@ h1 span { display: block; font-family: var(--font-sans); margin-top: 1.5rem; fon
 h2 { font: 400 clamp(3rem,6vw,6.2rem)/.95 Georgia, serif; letter-spacing: -.055em; margin: 0; }
 .papers { margin-left: 25%; }
 .papers article { display: grid; grid-template-columns: 50px 1fr; gap: 2rem; padding: 2.7rem 0; border-top: 1px solid var(--line); }
+.papers article.featured-paper { margin: 0 -1.25rem; padding: 3.2rem 1.25rem; border-top: 2px solid var(--blue); background: linear-gradient(90deg, rgba(36,79,143,.07), rgba(36,79,143,0) 78%); }
+.featured-paper .paper-index { color: var(--blue); }
 .papers article:last-child { border-bottom: 1px solid var(--line); }
 .paper-index { font: .68rem var(--font-mono); color: var(--muted); padding-top: .2rem; }
 .papers h3 { font: 400 clamp(1.5rem,2.6vw,2.5rem)/1.12 Georgia, serif; margin: .5rem 0; letter-spacing: -.025em; }
 .authors { font-size: .78rem; color: var(--muted); }
+.paper-summary { max-width: 780px; margin: 1.1rem 0 .8rem; color: #424b60; font: 400 1rem/1.7 Georgia, serif; }
 .abstract { max-width: 720px; color: #4e5668; line-height: 1.65; font-size: .9rem; }
 .paper-links { display: flex; gap: 1.4rem; margin-top: 1.2rem; }
 .paper-links a { font-size: .72rem; border-bottom: 1px solid; }

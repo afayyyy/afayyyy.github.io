@@ -1,5 +1,12 @@
 const papers = [
   {
+    status: "Job Market Paper · Preliminary Draft",
+    title: "When Consumers Move: The Tradability of Local Consumption",
+    field: "Urban Economics · Consumer Mobility · Digital Platforms",
+    summary: "Using anonymized transaction data that follow Hong Kong consumers across Hong Kong and mainland China, I document systematic differences in cross-border market entry, destination choice, consumption breadth, and the composition of portable and place-based spending across expenditure levels and distance. I develop a spatial model of cross-border consumption that integrates nonhomothetic demand, consumer mobility, and spatial access costs, linking passenger connectivity to consumer welfare and the spatial distribution of urban demand.",
+    featured: true,
+  },
+  {
     status: "Under review",
     title: "Infrastructure Development and Cross-Border Consumption: Evidence from the Largest Fintech Platform in China",
     authors: "with Xijie Gao",
@@ -95,12 +102,12 @@ export default function Home() {
 
       <section className="hero" id="about">
         <div className="hero-copy">
-          <p className="kicker">Empirical economist · Digital economy · International trade</p>
+          <p className="kicker">Applied microeconomist · Urban economics · Digital economy</p>
           <h1>Jing Han</h1>
           <p className="role">Ph.D. Candidate in Economics · The Chinese University of Hong Kong</p>
           <div className="bio">
-            <p>I am an empirical economist studying <strong>digital platforms, international trade, and technological change</strong> using large-scale firm and transaction data.</p>
-            <p>My research combines rigorous applied microeconomics with research and industry experience in Greater China. I am a Hong Kong PhD Fellow and expect to complete my Ph.D. in 2027.</p>
+            <p>I am an applied microeconomist studying <strong>urban economics, consumer mobility, digital platforms, and international trade</strong>. My research combines empirical analysis with economic modeling to understand how people, goods, and economic activity move across space.</p>
+            <p>My job market paper examines how consumers make local consumption tradable by moving themselves across cities, using anonymized transaction data that follow Hong Kong consumers across Hong Kong and mainland China. I am a Hong Kong PhD Fellow and expect to complete my Ph.D. in 2027.</p>
           </div>
           <div className="links">
             <a href="#research">Explore my research ↓</a>
@@ -112,7 +119,7 @@ export default function Home() {
             <img src="/jing-han-portrait.jpg" alt="Portrait of Jing Han" width="1080" height="1440" />
           </div>
           <dl>
-            <div><dt>Fields</dt><dd>Digital Economics · International Trade</dd></div>
+            <div><dt>Fields</dt><dd>Urban Economics · Digital Economics</dd></div>
             <div><dt>Affiliation</dt><dd>The Chinese University of Hong Kong</dd></div>
             <div><dt>Advisor</dt><dd>Zheng (Michael) Song</dd></div>
             <div><dt>Location</dt><dd>Hong Kong SAR</dd></div>
@@ -121,16 +128,22 @@ export default function Home() {
       </section>
 
       <div className="fields" aria-label="Research interests">
-        <span>Digital Economics</span><i>01</i><span>Technological Change</span><i>02</i><span>International Trade</span><i>03</i><span>Applied Microeconomics</span><i>04</i>
+        <span>Urban Economics</span><i>01</i><span>Consumer Mobility</span><i>02</i><span>Digital Platforms</span><i>03</i><span>International Trade</span><i>04</i>
       </div>
 
       <section className="section" id="research">
         <div className="section-title"><p>01 · Research</p><h2>Research portfolio</h2></div>
         <div className="papers">
           {papers.map((paper, index) => (
-            <article key={paper.title}>
+            <article key={paper.title} className={paper.featured ? "featured-paper" : undefined}>
               <span className="paper-index">0{index + 1}</span>
-              <div><p className="status">{paper.status}</p><h3>{paper.title}</h3><p className="authors">{paper.authors}</p><p className="abstract">{paper.field}</p></div>
+              <div>
+                <p className="status">{paper.status}</p>
+                <h3>{paper.title}</h3>
+                {paper.authors && <p className="authors">{paper.authors}</p>}
+                {paper.summary && <p className="paper-summary">{paper.summary}</p>}
+                <p className="abstract">{paper.field}</p>
+              </div>
             </article>
           ))}
         </div>
@@ -225,7 +238,7 @@ export default function Home() {
           <div><b>Documents</b><span><a href="/Jing_Han_CV.pdf" target="_blank">Download curriculum vitae ↗</a></span></div>
         </div>
       </section>
-      <footer><span>© 2026 Jing Han</span><span>Last updated August 2026</span><a href="#top">Back to top ↑</a></footer>
+      <footer><span>© 2026 Jing Han</span><span>Last updated September 2026</span><a href="#top">Back to top ↑</a></footer>
     </main>
   );
 }
