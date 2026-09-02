@@ -102,11 +102,11 @@ export default function Home() {
 
       <section className="hero" id="about">
         <div className="hero-copy">
-          <p className="kicker">Applied microeconomist · Urban economics · Digital economy</p>
+          <p className="kicker">Ph.D. student · Urban economics · Digital economy</p>
           <h1>Jing Han</h1>
-          <p className="role">Ph.D. Candidate in Economics · The Chinese University of Hong Kong</p>
+          <p className="role">Ph.D. Student in Economics · The Chinese University of Hong Kong</p>
           <div className="bio">
-            <p>I am an applied microeconomist studying <strong>urban economics, consumer mobility, digital platforms, and international trade</strong>. My research combines empirical analysis with economic modeling to understand how people, goods, and economic activity move across space.</p>
+            <p>I am a Ph.D. student in Economics studying <strong>urban economics, consumer mobility, digital platforms, and international trade</strong>. My research combines empirical analysis with economic modeling to understand how people, goods, and economic activity move across space.</p>
             <p>My job market paper examines how consumers make local consumption tradable by moving themselves across cities, using anonymized transaction data that follow Hong Kong consumers across Hong Kong and mainland China. I am a Hong Kong PhD Fellow and expect to complete my Ph.D. in 2027.</p>
           </div>
           <div className="links">
