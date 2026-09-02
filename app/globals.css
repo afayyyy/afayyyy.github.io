@@ -57,6 +57,9 @@ h2 { font: 400 clamp(3rem,6vw,6.2rem)/.95 Georgia, serif; letter-spacing: -.055e
 .papers article:last-child { border-bottom: 1px solid var(--line); }
 .paper-index { font: .68rem var(--font-mono); color: var(--muted); padding-top: .2rem; }
 .papers h3 { font: 400 clamp(1.5rem,2.6vw,2.5rem)/1.12 Georgia, serif; margin: .5rem 0; letter-spacing: -.025em; }
+.papers h3 a { text-decoration: underline; text-decoration-color: transparent; text-decoration-thickness: 1px; text-underline-offset: .18em; transition: color .2s, text-decoration-color .2s; }
+.papers h3 a:hover, .papers h3 a:focus-visible { color: var(--blue); text-decoration-color: currentColor; }
+.papers h3 a span { font: .7em var(--font-sans); }
 .authors { font-size: .78rem; color: var(--muted); }
 .paper-summary { max-width: 780px; margin: 1.1rem 0 .8rem; color: #424b60; font: 400 1rem/1.7 Georgia, serif; }
 .abstract { max-width: 720px; color: #4e5668; line-height: 1.65; font-size: .9rem; }

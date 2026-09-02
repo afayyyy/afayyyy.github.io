@@ -8,9 +8,10 @@ const papers = [
   },
   {
     status: "Under review",
-    title: "Infrastructure Development and Cross-Border Consumption: Evidence from the Largest Fintech Platform in China",
+    title: "Physical Connectivity, Digital Payments, and Cross-Border Consumption",
     authors: "with Xijie Gao",
     field: "Digital platforms · Fintech · Consumption",
+    link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6112366",
   },
   {
     status: "Manuscript available upon request",
@@ -19,7 +20,7 @@ const papers = [
     field: "International trade · Firm dynamics",
   },
   {
-    status: "Invited to resubmit · Research Policy",
+    status: "Rejected and resubmitted · Research Policy",
     title: "Trade Barriers as Risks to Low-Carbon Technology Innovation",
     authors: "with Donghui Yu and Baihe Gu",
     field: "Technological change · Trade policy",
@@ -139,7 +140,7 @@ export default function Home() {
               <span className="paper-index">0{index + 1}</span>
               <div>
                 <p className="status">{paper.status}</p>
-                <h3>{paper.title}</h3>
+                <h3>{paper.link ? <a href={paper.link} target="_blank" rel="noopener noreferrer">{paper.title} <span aria-hidden="true">↗</span></a> : paper.title}</h3>
                 {paper.authors && <p className="authors">{paper.authors}</p>}
                 {paper.summary && <p className="paper-summary">{paper.summary}</p>}
                 <p className="abstract">{paper.field}</p>
@@ -152,13 +153,28 @@ export default function Home() {
       <section className="section publication">
         <div className="section-title"><p>02 · Publications</p><h2>Published work</h2></div>
         <div className="papers">
-          <article><span className="paper-index">01</span><div><p className="status">Energy Policy · Accepted for publication</p><h3>The Role of Trade Protectionism and Local Industry Support Policies in Low-Carbon Technologies Trade</h3><p className="authors">with Donghui Yu and Baihe Gu</p></div></article>
+          <article><span className="paper-index">01</span><div><p className="status">Energy Policy · Accepted for publication</p><h3><a href="https://www.sciencedirect.com/science/article/abs/pii/S0301421526004738" target="_blank" rel="noopener noreferrer">The Role of Trade Protectionism and Local Industry Support Policies in Low-Carbon Technologies Trade <span aria-hidden="true">↗</span></a></h3><p className="authors">with Donghui Yu and Baihe Gu</p></div></article>
           <article><span className="paper-index">02</span><div><p className="status">Review of Industrial Economics · 2020 · In Chinese</p><h3>The New Coronavirus and Other Major Pandemics: A Review</h3><p className="authors">with Zhiyuan Li</p></div></article>
         </div>
       </section>
 
+      <section className="section publication policy-study" id="policy">
+        <div className="section-title"><p>03 · Policy study</p><h2>Policy study</h2></div>
+        <div className="papers">
+          <article>
+            <span className="paper-index">01</span>
+            <div>
+              <p className="status">Policy report · 2025</p>
+              <h3><a href="https://www.michael-song.org/uploads/4/8/1/4/48141215/hongkongers_in_mainland.pdf" target="_blank" rel="noopener noreferrer">Hong Kong Travelers in Mainland China: Scale, Destinations, and Expenditure Patterns <span aria-hidden="true">↗</span></a></h3>
+              <p className="authors">with Xijie Gao and Zheng (Michael) Song</p>
+              <p className="abstract"><strong>Media coverage:</strong> RTHK, HKET, Ming Pao, Xinhua News Agency, People&apos;s Daily Online, Yahoo Finance, and other regional media.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section className="section teaching" id="background">
-        <div className="section-title"><p>03 · Background</p><h2>Education &amp; experience</h2></div>
+        <div className="section-title"><p>04 · Background</p><h2>Education &amp; experience</h2></div>
         <div className="course-list">
           <article><span>2022–27</span><div><h3>The Chinese University of Hong Kong</h3><p>Ph.D. in Economics · Hong Kong PhD Fellowship · expected 2027</p></div></article>
           <article><span>2019–22</span><div><h3>Fudan University</h3><p>M.S. in World Economics</p></div></article>
@@ -169,7 +185,7 @@ export default function Home() {
 
       <section className="section life" id="life">
         <div className="section-title life-heading">
-          <p>04 · Personal life</p>
+          <p>05 · Personal life</p>
           <div>
             <h2>Life beyond<br />research</h2>
             <p className="life-intro">Research is only one way I stay curious. Away from papers and datasets, I find stories in books and in the cultural traces of the cities I walk through.</p>
@@ -230,7 +246,7 @@ export default function Home() {
       </section>
 
       <section className="contact" id="contact">
-        <p>05 · Contact</p><h2>Let&apos;s talk about<br />research.</h2>
+        <p>06 · Contact</p><h2>Let&apos;s talk about<br />research.</h2>
         <a className="email" href="mailto:1155179329@link.cuhk.edu.hk">1155179329@link.cuhk.edu.hk <span>↗</span></a>
         <div className="contact-grid">
           <div><b>Based in</b><span>Hong Kong SAR<br />The Chinese University of Hong Kong</span></div>
