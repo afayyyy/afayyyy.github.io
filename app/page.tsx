@@ -20,12 +20,6 @@ const papers = [
     field: "Technological change · Trade policy",
   },
   {
-    status: "Manuscript available upon request",
-    title: "How Do ESG Ratings Incorporate CSR Disclosures? Evidence from Rating Revisions and Third-Party Assurance",
-    authors: "with Aitong Zhang",
-    field: "ESG · Information disclosure",
-  },
-  {
     status: "Under review · Economic Analysis and Policy",
     title: "Migration Dynamics and Reproductive Choices: Evidence from China",
     authors: "with Zeyang Bian",
