@@ -20,7 +20,7 @@ const papers = [
     field: "International trade · Firm dynamics",
   },
   {
-    status: "Rejected and resubmitted · Research Policy",
+    status: "R&R · Research Policy",
     title: "Trade Barriers as Risks to Low-Carbon Technology Innovation",
     authors: "with Donghui Yu and Baihe Gu",
     field: "Technological change · Trade policy",
