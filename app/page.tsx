@@ -20,7 +20,7 @@ const papers = [
     field: "Technological change · Trade policy",
   },
   {
-    status: "Under review · Economic Analysis and Policy",
+    status: "R&R · Economic Analysis and Policy",
     title: "Migration Dynamics and Reproductive Choices: Evidence from China",
     authors: "with Zeyang Bian",
     field: "Labor · Demography",
