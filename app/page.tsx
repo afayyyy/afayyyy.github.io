@@ -14,12 +14,6 @@ const papers = [
     link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6112366",
   },
   {
-    status: "Manuscript available upon request",
-    title: "Industrial Firm Dynamics and Trade Policy Uncertainty",
-    authors: "with Zhiyuan Li",
-    field: "International trade · Firm dynamics",
-  },
-  {
     status: "R&R · Research Policy",
     title: "Trade Barriers as Risks to Low-Carbon Technology Innovation",
     authors: "with Donghui Yu and Baihe Gu",
