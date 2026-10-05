@@ -108,7 +108,7 @@ export default function Home() {
           <p className="role">Ph.D. Student in Economics · The Chinese University of Hong Kong</p>
           <div className="bio">
             <p>I am a Ph.D. student in Economics studying <strong>urban economics, consumer mobility, digital platforms, and international trade</strong>. My research combines empirical analysis with economic modeling to understand how people, goods, and economic activity move across space.</p>
-            <p>My job market paper examines how consumers make local consumption tradable by moving themselves across cities, using anonymized transaction data that follow Hong Kong consumers across Hong Kong and mainland China. I am a Hong Kong PhD Fellow and expect to complete my Ph.D. in 2027.</p>
+            <p>My job market paper examines how consumers make local consumption tradable by moving themselves across cities, using anonymized transaction data that follow Hong Kong consumers across Hong Kong and mainland China. I am a Hong Kong PhD Fellow.</p>
           </div>
           <div className="links">
             <a href="#research">Explore my research ↓</a>
@@ -176,7 +176,7 @@ export default function Home() {
       <section className="section teaching" id="background">
         <div className="section-title"><p>04 · Background</p><h2>Education &amp; experience</h2></div>
         <div className="course-list">
-          <article><span>2022–27</span><div><h3>The Chinese University of Hong Kong</h3><p>Ph.D. in Economics · Hong Kong PhD Fellowship · expected 2027</p></div></article>
+          <article><span>2022–present</span><div><h3>The Chinese University of Hong Kong</h3><p>Ph.D. in Economics · Hong Kong PhD Fellowship</p></div></article>
           <article><span>2019–22</span><div><h3>Fudan University</h3><p>M.S. in World Economics</p></div></article>
           <article><span>2015–19</span><div><h3>Fudan University</h3><p>B.S. in International Economics and Trade · Second major in English Literature and Translation</p></div></article>
           {experience.map((item) => <article key={item.place}><span>{item.years}</span><div><h3>{item.place}</h3><p>{item.role}</p></div></article>)}
