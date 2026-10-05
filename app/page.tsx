@@ -27,13 +27,6 @@ const papers = [
   },
 ];
 
-const experience = [
-  { years: "2024", place: "Ant Research Institute, Ant Group", role: "Visiting Researcher · Hong Kong" },
-  { years: "2021–22", place: "Luohan Academy, Alibaba Group", role: "Research Assistant · Digital economy research" },
-  { years: "2021–22", place: "UNICEF South-South Cooperation", role: "Research Assistant · International policy research" },
-  { years: "2018–19", place: "Bain & Company, Shanghai", role: "Business Analyst Intern" },
-];
-
 const lifeNotes = [
   {
     number: "01",
@@ -84,7 +77,7 @@ export default function Home() {
       <header>
         <a className="brand" href="#top">JING HAN <span>ECONOMICS</span></a>
         <nav aria-label="Main navigation">
-          <a href="#about">Home</a><a href="#research">Research</a><a href="#background">Background</a><a href="#life">Personal life</a><a href="#contact">Contact</a>
+          <a href="#about">Home</a><a href="#research">Research</a><a href="#life">Personal life</a><a href="#contact">Contact</a>
         </nav>
         <a className="cv" href="/Jing_Han_CV.pdf" target="_blank">CV ↗</a>
       </header>
@@ -161,19 +154,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section teaching" id="background">
-        <div className="section-title"><p>04 · Background</p><h2>Education &amp; experience</h2></div>
-        <div className="course-list">
-          <article><span>2022–present</span><div><h3>The Chinese University of Hong Kong</h3><p>Ph.D. in Economics · Hong Kong PhD Fellowship</p></div></article>
-          <article><span>2019–22</span><div><h3>Fudan University</h3><p>M.S. in World Economics</p></div></article>
-          <article><span>2015–19</span><div><h3>Fudan University</h3><p>B.S. in International Economics and Trade · Second major in English Literature and Translation</p></div></article>
-          {experience.map((item) => <article key={item.place}><span>{item.years}</span><div><h3>{item.place}</h3><p>{item.role}</p></div></article>)}
-        </div>
-      </section>
-
       <section className="section life" id="life">
         <div className="section-title life-heading">
-          <p>05 · Personal life</p>
+          <p>04 · Personal life</p>
           <div>
             <h2>Life beyond<br />research</h2>
             <p className="life-intro">Research is only one way I stay curious. Away from papers and datasets, I find stories in books and in the cultural traces of the cities I walk through.</p>
@@ -234,7 +217,7 @@ export default function Home() {
       </section>
 
       <section className="contact" id="contact">
-        <p>06 · Contact</p><h2>Let&apos;s talk about<br />research.</h2>
+        <p>05 · Contact</p><h2>Let&apos;s talk about<br />research.</h2>
         <a className="email" href="mailto:1155179329@link.cuhk.edu.hk">1155179329@link.cuhk.edu.hk <span>↗</span></a>
         <div className="contact-grid">
           <div><b>Based in</b><span>Hong Kong SAR<br />The Chinese University of Hong Kong</span></div>
