@@ -128,8 +128,8 @@ export default function Home() {
       <section className="section publication">
         <div className="section-title"><p>02 · Publications</p><h2>Published work</h2></div>
         <div className="papers">
-          <article><span className="paper-index">01</span><div><p className="status">Economic Analysis and Policy · Accepted for publication</p><h3>Migration Dynamics and Reproductive Choices: Evidence from China</h3><p className="authors">with Zeyang Bian</p></div></article>
-          <article><span className="paper-index">02</span><div><p className="status">Energy Policy · Published</p><h3><a href="https://www.sciencedirect.com/science/article/abs/pii/S0301421526004738" target="_blank" rel="noopener noreferrer">The Role of Trade Protectionism and Local Industry Support Policies in Low-Carbon Technologies Trade <span aria-hidden="true">↗</span></a></h3><p className="authors">with Donghui Yu and Baihe Gu</p></div></article>
+          <article><span className="paper-index">01</span><div><p className="status">Economic Analysis and Policy · 2026 · Accepted for publication</p><h3>Migration Dynamics and Reproductive Choices: Evidence from China</h3><p className="authors">with Zeyang Bian</p></div></article>
+          <article><span className="paper-index">02</span><div><p className="status">Energy Policy · 2026 · Published</p><h3><a href="https://www.sciencedirect.com/science/article/abs/pii/S0301421526004738" target="_blank" rel="noopener noreferrer">The Role of Trade Protectionism and Local Industry Support Policies in Low-Carbon Technologies Trade <span aria-hidden="true">↗</span></a></h3><p className="authors">with Donghui Yu and Baihe Gu</p></div></article>
           <article><span className="paper-index">03</span><div><p className="status">Review of Industrial Economics · 2020 · In Chinese</p><h3>The New Coronavirus and Other Major Pandemics: A Review</h3><p className="authors">with Zhiyuan Li</p></div></article>
         </div>
       </section>
