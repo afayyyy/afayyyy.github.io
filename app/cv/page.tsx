@@ -1,7 +1,7 @@
 import SiteShell from "../site-shell";
 
 export const metadata = {
-  title: "CV | Jing HAN (Faye)",
+  title: "CV | Jing Han",
   alternates: { canonical: "/cv/" },
 };
 

@@ -1,5 +1,5 @@
 import SiteShell from '../site-shell';
-export const metadata = { title: "Personal Life | Jing HAN (Faye)", alternates: { canonical: "/personal-life/" } };
+export const metadata = { title: "Personal Life | Jing Han", alternates: { canonical: "/personal-life/" } };
 
 const lifeNotes = [
   {
