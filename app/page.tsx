@@ -1,8 +1,8 @@
 import SiteShell from './site-shell';
-export const metadata = { title: "Home | Jing Han", alternates: { canonical: "/" } };
+export const metadata = { title: "Home | Jing HAN (Faye)", alternates: { canonical: "/" } };
 export default function Home() { return <SiteShell active="home"><main id="top" className="home-page">      <section className="hero" id="about">
         <div className="hero-copy">
-          <h1>Jing Han</h1>
+          <h1>Jing HAN (Faye)</h1>
           <p className="role">Ph.D. Student in Economics · The Chinese University of Hong Kong (CUHK)</p>
           <div className="bio">
             <p>I am a Ph.D. student in Economics studying <strong>urban economics, consumer mobility, digital platforms, and international trade</strong>. My research combines empirical analysis with economic modeling to understand how people, goods, and economic activity move across space.</p>

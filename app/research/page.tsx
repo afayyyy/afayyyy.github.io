@@ -2,7 +2,7 @@ import SiteShell from '../site-shell';
 function InstitutionLogo({ name, label }: { name: string; label: string }) {
   return <span className={`institution-icon institution-icon-${name}`} role="img" aria-label={label} />;
 }
-export const metadata = { title: "Research | Jing Han", alternates: { canonical: "/research/" } };
+export const metadata = { title: "Research | Jing HAN (Faye)", alternates: { canonical: "/research/" } };
 
 const papers = [
   {
@@ -28,7 +28,7 @@ const papers = [
 ];
 
 
-export default function Research() { return <SiteShell active="research"><main id="top" className="research-page"><div className="page-heading"><p className="kicker">Jing Han · Economics</p><h1>Research</h1><p>Urban economics, consumer mobility, digital platforms, and international trade.</p><nav aria-label="Research sections"><a href="#publications">Publications</a><a href="#research">Working papers</a><a href="#policy">Policy reports</a></nav></div>      <section className="section publication" id="publications">
+export default function Research() { return <SiteShell active="research"><main id="top" className="research-page"><div className="page-heading"><p className="kicker">Jing HAN (Faye) · Economics</p><h1>Research</h1><p>Urban economics, consumer mobility, digital platforms, and international trade.</p><nav aria-label="Research sections"><a href="#publications">Publications</a><a href="#research">Working papers</a><a href="#policy">Policy reports</a></nav></div>      <section className="section publication" id="publications">
         <div className="section-title"><p>02 · Publications</p><h2>Published work</h2></div>
         <div className="papers">
           <article><span className="paper-index">01</span><div><p className="publication-venue"><strong>Economic Analysis and Policy</strong><span>2026 · Accepted for publication</span></p><h3>Migration Dynamics and Reproductive Choices: Evidence from China</h3><p className="authors">with Zeyang Bian</p></div></article>
