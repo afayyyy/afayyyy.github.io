@@ -1,4 +1,7 @@
 import SiteShell from '../site-shell';
+function InstitutionLogo({ name, label }: { name: string; label: string }) {
+  return <span className={`institution-icon institution-icon-${name}`} role="img" aria-label={label} />;
+}
 export const metadata = { title: "Research | Jing Han", alternates: { canonical: "/research/" } };
 
 const papers = [
@@ -70,10 +73,10 @@ export default function Research() { return <SiteShell active="research"><main i
       <section className="section research-experience" id="experience" aria-labelledby="experience-title">
         <div className="section-title"><h2 id="experience-title">Research &amp; Industry Experience</h2></div>
         <div className="experience-list">
-          <article><div><h3>Ant Research Institute, Ant Group <img className="institution-logo" src="/logos/ant-group.png" alt="Ant Group logo" width="547" height="365" loading="lazy" /></h3><p>Visiting Researcher · Industry-based economic research in Hong Kong</p></div><p className="experience-date">Jun.–Sep. 2024</p></article>
-          <article><div><h3>Luohan Academy, Alibaba Group <img className="institution-logo" src="/logos/alibaba.png" alt="Alibaba Group logo" width="561" height="356" loading="lazy" /></h3><p>Research Assistant · Digital-economy research</p></div><p className="experience-date">Oct. 2021–Jul. 2022</p></article>
-          <article><div><h3>UNICEF <img className="institution-logo" src="/logos/unicef.png" alt="UNICEF logo" width="400" height="400" loading="lazy" /></h3><p>Intern · South-South Cooperation</p></div><p className="experience-date">Feb. 2021–Mar. 2022</p></article>
-          <article><div><h3>Bain &amp; Company, Shanghai <img className="institution-logo" src="/logos/bain.png" alt="Bain &amp; Company logo" width="447" height="447" loading="lazy" /></h3><p>Business Analyst Intern</p></div><p className="experience-date">May 2018–May 2019</p></article>
+          <article><div><h3>Ant Research Institute, Ant Group <InstitutionLogo name="ant" label="Ant Group logo" /></h3><p>Visiting Researcher · Industry-based economic research in Hong Kong</p></div><p className="experience-date">Jun.–Sep. 2024</p></article>
+          <article><div><h3>Luohan Academy, Alibaba Group <InstitutionLogo name="alibaba" label="Alibaba Group logo" /></h3><p>Research Assistant · Digital-economy research</p></div><p className="experience-date">Oct. 2021–Jul. 2022</p></article>
+          <article><div><h3>UNICEF <InstitutionLogo name="unicef" label="UNICEF logo" /></h3><p>Intern · South-South Cooperation</p></div><p className="experience-date">Feb. 2021–Mar. 2022</p></article>
+          <article><div><h3>Bain &amp; Company, Shanghai <InstitutionLogo name="bain" label="Bain & Company logo" /></h3><p>Business Analyst Intern</p></div><p className="experience-date">May 2018–May 2019</p></article>
         </div>
       </section>
 </main></SiteShell>; }

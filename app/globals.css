@@ -203,7 +203,11 @@ main { scroll-margin-top: 120px; }
 .experience-list h3 { margin: 0 0 .35rem; font-size: 1.15rem; font-weight: 650; color: var(--blue); line-height: 1.4; }
 .experience-list p { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.6; }
 .experience-list h3 { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem 1rem; }
-.institution-logo { display: inline-block; width: auto; height: 54px; max-width: 100px; object-fit: contain; flex-shrink: 0; }
+.institution-icon { display: inline-block; width: 40px; height: 40px; flex-shrink: 0; background-repeat: no-repeat; }
+.institution-icon-ant { background-image: url('/logos/ant-group.png'); background-size: 125px 83.4px; background-position: 4px -22px; }
+.institution-icon-alibaba { background-image: url('/logos/alibaba.png'); background-size: 124.7px 79.1px; background-position: -8px -22px; border-radius: 4px; }
+.institution-icon-unicef { background-image: url('/logos/unicef.png'); background-size: 50px 50px; background-position: -5px 3px; }
+.institution-icon-bain { background-image: url('/logos/bain.png'); background-size: 154.1px 154.1px; background-position: -101.7px -57px; }
 .experience-list .experience-date { flex-shrink: 0; font-size: .88rem; white-space: nowrap; }
 @media(max-width:600px) { .experience-list article { flex-direction: column; gap: .4rem; } }
 .paper-details { margin-top: .8rem; }
