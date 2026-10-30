@@ -67,4 +67,13 @@ export default function Research() { return <SiteShell active="research"><main i
         </div>
       </section>
 
+      <section className="section research-experience" id="experience" aria-labelledby="experience-title">
+        <div className="section-title"><h2 id="experience-title">Research, industry &amp; consulting experience</h2></div>
+        <div className="experience-list">
+          <article><div><h3>Ant Research Institute, Ant Group</h3><p>Visiting Researcher · Industry-based economic research in Hong Kong</p></div><p className="experience-date">Jun.–Sep. 2024</p></article>
+          <article><div><h3>Luohan Academy, Alibaba Group</h3><p>Research Assistant · Digital-economy research</p></div><p className="experience-date">Oct. 2021–Jul. 2022</p></article>
+          <article><div><h3>UNICEF South-South Cooperation</h3><p>Research Assistant · International policy research</p></div><p className="experience-date">Feb. 2021–Mar. 2022</p></article>
+          <article><div><h3>Bain &amp; Company, Shanghai</h3><p>Business Analyst Intern</p></div><p className="experience-date">May 2018–May 2019</p></article>
+        </div>
+      </section>
 </main></SiteShell>; }
