@@ -32,6 +32,9 @@ h1 span { display: block; font-family: var(--font-sans); margin-top: 1.5rem; fon
 .links a { padding: .8rem 1rem; border: 1px solid var(--ink); font-size: .78rem; transition: .2s; }
 .links a:first-child { background: var(--ink); color: white; }
 .links a:hover { transform: translateY(-2px); }
+.social-links { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; margin-top: 1.3rem; font-size: .9rem; color: var(--blue); }
+.social-links a { text-decoration: underline; text-underline-offset: .25em; text-decoration-color: var(--line); }
+.social-links a:hover { text-decoration-color: currentColor; }
 .portrait { aspect-ratio: 4/5; background: var(--blue); color: white; display: grid; place-content: center; text-align: center; position: relative; overflow: hidden; }
 .portrait::before, .portrait::after { content: ""; position: absolute; border: 1px solid rgba(255,255,255,.15); border-radius: 50%; }
 .portrait::before { width: 90%; aspect-ratio: 1; left: 5%; top: 10%; }
