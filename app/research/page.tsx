@@ -73,10 +73,10 @@ export default function Research() { return <SiteShell active="research"><main i
       <section className="section research-experience" id="experience" aria-labelledby="experience-title">
         <div className="section-title"><h2 id="experience-title">Research &amp; Industry Experience</h2></div>
         <div className="experience-list">
-          <article><div><h3>Ant Research Institute, Ant Group <InstitutionLogo name="ant" label="Ant Group logo" /></h3><p>Visiting Researcher · Industry-based economic research in Hong Kong</p></div><p className="experience-date">Jun.–Sep. 2024</p></article>
-          <article><div><h3>Luohan Academy, Alibaba Group <InstitutionLogo name="alibaba" label="Alibaba Group logo" /></h3><p>Research Assistant · Digital-economy research</p></div><p className="experience-date">Oct. 2021–Jul. 2022</p></article>
-          <article><div><h3>UNICEF <InstitutionLogo name="unicef" label="UNICEF logo" /></h3><p>Intern · South-South Cooperation</p></div><p className="experience-date">Feb. 2021–Mar. 2022</p></article>
-          <article><div><h3>Bain &amp; Company, Shanghai <InstitutionLogo name="bain" label="Bain & Company logo" /></h3><p>Business Analyst Intern</p></div><p className="experience-date">May 2018–May 2019</p></article>
+          <article><div><h3><InstitutionLogo name="ant" label="Ant Group logo" /><span>Ant Research Institute, Ant Group</span></h3><p>Visiting Researcher · Industry-based economic research in Hong Kong</p></div><p className="experience-date">Jun.–Sep. 2024</p></article>
+          <article><div><h3><InstitutionLogo name="alibaba" label="Alibaba Group logo" /><span>Luohan Academy, Alibaba Group</span></h3><p>Research Assistant · Digital-economy research</p></div><p className="experience-date">Oct. 2021–Jul. 2022</p></article>
+          <article><div><h3><InstitutionLogo name="unicef" label="UNICEF logo" /><span>UNICEF</span></h3><p>Intern · South-South Cooperation</p></div><p className="experience-date">Feb. 2021–Mar. 2022</p></article>
+          <article><div><h3><InstitutionLogo name="bain" label="Bain & Company logo" /><span>Bain &amp; Company, Shanghai</span></h3><p>Business Analyst Intern</p></div><p className="experience-date">May 2018–May 2019</p></article>
         </div>
       </section>
 </main></SiteShell>; }
