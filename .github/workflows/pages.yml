@@ -36,6 +36,7 @@ jobs:
           path: out
 
   deploy:
+    timeout-minutes: 35
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -47,7 +48,9 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            for (let attempt = 0; attempt < 36; attempt += 1) {
+            // Branch-based Pages may queue longer than three minutes.
+            // Wait for it so its source-only artifact cannot overwrite this build.
+            for (let attempt = 0; attempt < 360; attempt += 1) {
               const { data } = await github.rest.actions.listWorkflowRunsForRepo({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
