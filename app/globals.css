@@ -208,6 +208,9 @@ main { scroll-margin-top: 120px; }
 .experience-list article > div > h3:not(:has(.institution-icon)) + p { padding-left: 0; }
 .journalism-links { margin: .65rem 0 0; padding-left: 1.2rem; color: var(--blue); font-size: .9rem; line-height: 1.8; }
 .journalism-links a { text-decoration: underline; text-underline-offset: .2em; }
+.experience-list .journalism-heading { flex-wrap: wrap; }
+.institution-name { display: inline-flex; align-items: center; gap: .6rem; }
+.media-logo { width: 40px; height: 40px; object-fit: contain; flex-shrink: 0; }
 .institution-icon { display: inline-block; width: 40px; height: 40px; flex-shrink: 0; background-repeat: no-repeat; }
 .institution-icon-ant { background-image: url('/logos/ant-group.png'); background-size: 125px 83.4px; background-position: 4px -22px; }
 .institution-icon-alibaba { background-image: url('/logos/alibaba.png'); background-size: 124.7px 79.1px; background-position: -8px -22px; border-radius: 4px; }
