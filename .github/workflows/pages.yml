@@ -30,9 +30,18 @@ jobs:
         run: npm ci
       - name: Build static website
         run: npm run build:pages
+      - name: Verify exported pages and photos
+        run: |
+          test -f out/research/index.html
+          test -f out/personal-life/index.html
+          test -f out/Jing_Han_CV.pdf
+          for photo in public/city-walks/*.jpg; do
+            test -f "out/city-walks/$(basename "$photo")"
+          done
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          name: academic-homepage-pages
           path: out
 
   deploy:
@@ -70,3 +79,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: academic-homepage-pages
